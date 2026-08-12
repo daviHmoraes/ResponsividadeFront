@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 100%;
+}
+
+:root {
+    --cor-empresa: #1A237E;
+    --cor-cinza: rgb(238, 238, 238);
+    --cor-cinza-texto: rgb(86, 86, 86);
+}
+
+header {
+    height: 10vh;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    width: 3rem;
+    height: 3rem;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+    background-color: var(--cor-empresa);
+    border: var(--cor-empresa) solid 1px;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.nav {
+    display: none;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    color: var(--cor-empresa);
+    margin-left: 0.5rem;
+}
+
+.hero {
+    padding: 25vh 5vw;
+}
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+
+.hero_content h1 {
+    font-size: 2.5rem;
+    color: var(--cor-empresa);
+}
+
+.hero_content p {
+    font-size: 1.3rem;
+}
+
+.hero_content .buttons {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.hero img {
+    display: none;
+}
+
+.blue_button {
+    background-color: var(--cor-empresa);
+    color: white;
+    border: var(--cor-empresa) solid 1px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+}
+
+.white_button {
+    background-color: white;
+    color: var(--cor-empresa);
+    border: var(--cor-empresa) solid 1px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+}
+
+.about_us {
+    background-color: var(--cor-cinza);
+    display: flex;
+    flex-direction: column;
+    padding: 25vh 5vw;
+    gap: 3vh;
+}
+
+.about_us h1 {
+    color: var(--cor-empresa);
+    font-size: 2.5rem;
+}  
+
+.about_us p {
+    font-size: 1.3rem;
+    color: var(--cor-cinza-texto);
+}
+
+.about_us img {
+    align-self: center;
+    border-radius: 10px;
+    width: 95vw;
+    height: auto;
+}
+
+.our_services {
+    display: flex;
+    flex-direction: column;
+    padding: 25vh 3vw;
+    gap: 3vh;
+}
+
+.our_services h1 {
+    color: var(--cor-empresa);
+    font-size: 2.5rem;
+}  
+
+.our_services p {
+    font-size: 1.3rem;
+    color: var(--cor-cinza-texto);
+}
+
+.our_services .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-cinza);
+    padding: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    border: rgb(232, 232, 232) solid 2px;
+}
+
+.card h2 {
+    font-size: 1.2rem;
+}
+
+.card p {
+    color: var(--cor-cinza-texto);
+}
+
+.card img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.contact {
+    background-color: var(--cor-cinza);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20vh 0vh;
+}
+
+.contact_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    align-self: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: var(--cor-cinza) solid 1px;
+}
+
+.contact_card h1 {
+    color: var(--cor-empresa);
+    font-size: 2.5rem;
+}
+
+.contact_card p {
+    color: var(--cor-cinza-texto);
+    font-size: 1rem;
+}
+
+form {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form label {
+    color: var(--cor-cinza-texto);
+}
+
+form input, textarea {
+    width: 80vw;
+    border: var(--cor-cinza) solid 2px;
+    border-radius: 0.5rem;
+    height: 2rem;
+}
+
+form textarea {
+    height: 6rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--cor-cinza-texto);
+    font-weight: bold;
+    background-color: white;
+    padding: 1rem;
+    gap: 0.3rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer h3 {
+    color: var(--cor-empresa);
+}
+
+@media (min-width: 1040px) {
+
+    header {
+        justify-content: space-between;
+        padding: 0 48px;
+    }
+
+    .nav {
+        display: flex;
+        gap: 32px;
+        font-size: 24px;
+    }
+
+    .selected {
+        display: block;
+        font-weight: bold;
+        color: var(--cor-empresa);
+        border-bottom: var(--cor-empresa) solid 2px;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero img {
+        display: block;
+        width: 35%;
+        border-radius: 0.4rem;
+    }
+
+    .hero_content {
+        flex-direction: column;
+        text-align: left;
+        gap: 3rem;
+        width: 50%;
+    }
+
+    .hero_content .buttons {
+        align-self: flex-start;
+    }
+
+    .start {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .about_us {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 5rem;
+        background-color: white;
+    }
+
+    .about_us img {
+        display: block;
+        width:50%;
+        border-radius: 0.4rem;
+    }
+
+    .about_us_content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+}
